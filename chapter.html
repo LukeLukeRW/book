@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow Slave</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="chapter-view-section">
+        <h2 id="chapter-title"></h2>
+        <div id="chapter-content"></div>
+        <div id="navigation-buttons">
+            <button id="prev-chapter" onclick="navigateChapter(-1)">Previous</button>
+            <button id="next-chapter" onclick="navigateChapter(1)">Next</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    <script>
+        loadChapterFromURL();
+    </script>
+</body>
+</html>
